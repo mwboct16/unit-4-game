@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>  
+    <!--<link rel="stylesheet" href="assets/css/reset.css">-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=B612|Oswald|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+<div id="container">
+    <div id="container-overlay"></div> 
+     <h1 id="title">Crystal Collector!</h1>
+    <div id="instructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will <br>
+            add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number, you lose <br>
+            the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p> Each time when the game starts, the game will change the values of each crystal!</p>
+    </div>
+    <div id="random-number">
+        <p>0</p>
+    </div>
+    <div id="wins-loss">
+        <p>Wins:<span id="wins"></span></p>
+        <p>Losses:<span id="losses"></span></p>
+    </div>
+    <div id="crystals">
+        <img src="assets/images/green.jpg" style="width:120px;height:120px">
+        <img src="assets/images/orange.jpg" style="width:120px;height:120px">
+        <img src="assets/images/purple.jpg" style="width:120px;height:120px">
+        <img src="assets/images/tiiel.jpg" style="width:120px;height:120px">
+
+    </div>
+    <div id="total-score">
+        <p>Your total score is:</p>
+        <div id="total-score-display"></div>
+    </div>
+</div>
+   
+</body>
+
+</html>

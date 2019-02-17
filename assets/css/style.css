@@ -1,0 +1,68 @@
+html{
+    margin: 0;
+    height: 100%;
+    width: 100%;;
+}
+h1 {
+margin: 0;
+}
+
+body {
+font-family: 'Oswald', sans-serif;
+color: white;
+margin: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+#container {
+background-image: url("../images/background.jpg");
+background-position: center center;
+background-size: cover;
+position: relative;
+top: 0;
+bottom: 0;
+height: 100%;
+z-index: 1;
+}
+
+#container-overlay {
+position: absolute;
+background-color: rgba(0, 0, 0, 0.5);
+top: 0;
+bottom: 0;
+height: 100%;
+width: 100%;
+z-index: -5;
+}
+
+#title {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 33%;
+    text-align: center; 
+}
+
+#random-number {
+    width: 250px;
+    float: left;
+    color: black;
+    background-color: white;
+    padding: 0 0 45px 0;
+}
+
+#wins-loss {
+    display: inline-block;
+    background-color: #750034;
+    border: 2px black solid;
+    margin: 0 25px 10px 25px;
+    padding: 5px 25px;
+    width: 100px;
+}
+
+#crystals img {
+    padding: 0 25px 0 0;
+}
