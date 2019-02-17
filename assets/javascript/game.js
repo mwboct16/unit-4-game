@@ -10,5 +10,7 @@
 
 $('document').ready()
 
+var
+
 function pcRandomNum(random) {
 }
