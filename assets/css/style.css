@@ -51,7 +51,9 @@ z-index: -5;
     float: left;
     color: black;
     background-color: white;
-    padding: 0 0 45px 0;
+    padding: 35px 0 35px 0;
+    font-size: 24px;
+    text-align: center;
 }
 
 #wins-loss {
@@ -65,4 +67,9 @@ z-index: -5;
 
 #crystals img {
     padding: 0 25px 0 0;
+}
+
+#total-score-display {
+    color: white;
+    font-size: 24px;
 }

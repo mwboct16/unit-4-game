@@ -8,9 +8,48 @@
 - reset javascript without having to reload the page
 */
 
-$('document').ready()
+$('document').ready(function () {
 
-var
+var computerDecision = null
+var wins = 0;
+var losses = 0;
+var playerTotal = 0;
 
-function pcRandomNum(random) {
+var computerChoice = function () {
+    computerDecision = Math.floor(Math.random() * 40 + 10);
+    // Numbers between 10 and 40
+    return computerDecision;    
 }
+
+computerChoice();
+console.log(computerDecision);
+ 
+// display of pc generated random number
+var computerChoiceText = document.getElementById('random-number');
+computerChoiceText.innerHTML = computerDecision.toString();
+});
+
+// each picture gets random number
+var greenJewel = Math.floor(Math.random() * 10);
+var orangeJewel = Math.floor(Math.random() * 10);
+var purpleJewel = Math.floor(Math.random() * 10);
+var tealJewel = Math.floor(Math.random() * 10);
+
+console.log(greenJewel);
+console.log(orangeJewel);
+console.log(purpleJewel);
+console.log(tealJewel); 
+
+// each time the picture gets clicked, the value displays in the provided div
+$("#green").on('click', function () {
+    playerTotal = playerTotal + greenJewel;
+    $("#total-score-display").text(greenJewel);
+    console.log(playerTotal);
+})
+
+
+
+
+
+
+
