@@ -40,15 +40,54 @@ console.log(orangeJewel);
 console.log(purpleJewel);
 console.log(tealJewel); 
 
+// game reset
+var reset = function (){
+    computerChoice();
+    greenJewel;
+    orangeJewel;
+    purpleJewel;
+    tealJewel;
+    playerTotal = 0;
+}
+
+var rules = function(){
+    if (playerTotal > computerDecision) {
+    losses++
+    document.getElementById('loss').innerHTML = losses 
+    reset();
+    } else if (playerTotal === computerDecision){
+    wins++
+    reset();
+    }
+}
+
 // each time the picture gets clicked, the value displays in the provided div
-$("#green").on('click', function () {
+$("#green").on("click", function() {
     playerTotal = playerTotal + greenJewel;
-    $("#total-score-display").text(greenJewel);
+    document.getElementById('total-score-display').innerHTML = greenJewel;
+    rules();  
     console.log(playerTotal);
-})
+});
 
+$("#orange").on("click", function() {
+    playerTotal = playerTotal + orangeJewel;
+    document.getElementById('total-score-display').innerHTML = orangeJewel;    
+    rules();  
+    console.log(playerTotal);
+});
 
-
+$("#purple").on("click", function() {
+    playerTotal = playerTotal + purpleJewel;
+    document.getElementById('total-score-display').innerHTML = purpleJewel;    
+    rules();  
+    console.log(playerTotal);
+});
+$("#teal").on("click", function() {
+    playerTotal = playerTotal + tealJewel;
+    document.getElementById('total-score-display').innerHTML = tealJewel;    
+    rules();  
+    console.log(playerTotal);
+});
 
 
 
